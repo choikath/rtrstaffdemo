@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D/C Checklist</title>
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.js"></script>
+    
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+</head>
+<body>
+<div class= "container">
+
+    <h3 align="left"><b>PAT Patients (DEMO)</b></h3>
+<p><i>-Staff View, All Patients-</i> &nbsp&nbsp&nbsp&nbsp&nbsp <i> 
+	<!-- <a class="btn btn-default" href="services.html">(MD view by service)</a> -->
+
+</i></p>
+    <p align = "right"><i>Today: </i><i id="myDate" ></i></p>
+    <script>
+    var d = new Date(); document.getElementById("myDate").innerHTML = d.toDateString();
+    </script> 
+
+
+<table class="table table-hover" class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Date of Surgery</th>
+      <th>Patient (FL)</th>
+      <!--<th>Est. date of d/c (per MD)</th>-->
+      <th>Arrived?</th>
+      <th>PCC:</th>
+      <th>Lab/Bloodwork:</th>
+      <th>EKG:</th>
+      <th>XRay:</th>
+      <th>Note from MD:</th>
+      <th>SW:</th>
+      <th>Class:</th>
+      
+	  <th colspan="2"></th>
+      <!--<th>Leave note for d/c huddle</th>-->
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>4/29</td>
+        <td>YO</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#4caf50" class="fa fa-check"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+		<i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        [ ]  HbA1c
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        [ ] 
+        <br>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        [ ] Standing films, R hip.
+        <br>
+        </td>
+        <!--//-- MD tasks --//-->
+		<td></td>
+         <!--//-- SW tasks --//-->
+        <td>
+        [ ]
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+		
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+    
+     <tr>
+        <td>4/23</td>
+        <td>IL</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#4caf50" class="fa fa-check"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+		<i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        [ ]  PT/INR
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        <br>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        [ ] Repeat bilat knees pls
+        <br>
+        </td>
+        <!--//-- MD tasks --//-->
+		<td>Needs stress test, rec rescheduling</td>
+         <!--//-- SW tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+		[ ]
+        </td>
+		
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a  href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+    
+     <tr>
+        <td>4/24</td>
+        <td>LO</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#ba68c8" class="glyphicon glyphicon-time"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+		</td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        
+        <br>
+        </td>
+        <!--//-- MD tasks --//-->
+		<td></td>
+         <!--//-- SW tasks --//-->
+        <td>
+        
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+		</td>
+		
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+
+
+
+ <tr>
+        <td>5/1</td>
+        <td>DD</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#4caf50" class="fa fa-check"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+		<i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i> HbA1c 7.2
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        <br>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        Not required
+        <br>
+        </td>
+        <!--//-- MD tasks --//-->
+		<td></td>
+         <!--//-- SW tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+		[ ]
+        </td>
+        
+		
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+    
+  <tr>
+        <td>4/30</td>
+        <td>KC</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#4caf50" class="fa fa-check"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+			[ ]</i>
+        </td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check">
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        </i>
+        <br>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        [ ] Repeat films pls
+        <br>
+        </td>
+		
+        <!--//-- MD tasks --//-->
+        <td></td>
+        <!--//-- SW tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+		<i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+        
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+    
+    <tr>
+        <td>4/13</td>
+        <td>JK</td>
+        <!--<td><%= patient.estimatedate %></td>-->
+        <td><i style="color:#4caf50" class="fa fa-check"></i></td>
+
+		
+        <!--//-- PCC tasks --//-->
+        <td>
+		[ ]
+        </td>
+        
+        <!--//-- Lab tasks --//-->
+        <td>
+        [ ]  PT/INR
+        </td>
+
+        <!--//-- EKG tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        <br>
+        </td>
+        
+        
+        <!--//-- xray tasks --//-->
+        <td>
+        [ ] 
+        <br>
+        </td>
+        <!--//-- MD tasks --//-->
+		<td>Patient has not yet had PT eval, which is needed for placement</td>
+         <!--//-- SW tasks --//-->
+        <td>
+        <i style="color:#4caf50" class="fa fa-check"></i>
+        </td>
+		 <!--//-- Joint Class --//-->
+        <td>
+		[ ]
+        </td>
+        
+        
+        <!--<td><%= link_to 'View', patient %></td>-->
+          <td><a href=edit.html class="glyphicon glyphicon-edit"></a></td>
+          <td><a class="glyphicon glyphicon-trash"></a></td>
+        <!--<td>
+                <div class="btn-group" role="group" aria-label="...">
+            <a href="/leaveNote" class="btn btn-default btn-xs" >Add</button>
+            -->
+
+        </td>
+      </tr>
+
+
+    
+    
+    
+  </tbody>
+</table>
+
+<br>
+<!--
+    <p align = "right"><a href="clearlist.html">Clear List</a></p>
+        
+-->
+<p align = "right">
+    <a href="clearlist.html">Clear List</a></p>
+<!--
+    <a onclick="myFunction()">Clear List</a>
+        </p>
+-->
+<!--
+    <script>
+    function myFunction() {
+    var x;
+    if (confirm("Are you sure? This clears the entire list.") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+</script>
+-->
+
+<br>
+
+<a class="btn btn-info" href="addnew.html">Add Patient Entry</a>
+
+<p><br></p>
+
+
+</div>
+
+
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+
+</body>
+</html>
